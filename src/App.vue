@@ -6,31 +6,32 @@
         <div class="head-top">
             <div class="section">
                 <div class="left-box">
-                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">黑马买买买</font></font></span>
+                    <span>黑马买买买</span>
                     <a target="_blank" href="#"></a>
                     <a target="_blank" href="#"></a>
                 </div>
                 <div id="menu" class="right-box">
                     <span style="display: none;">
-                        <a href="" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登录</font></font></a>
-                        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font></strong>
-                        <a href="" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注册</font></font></a>
-                        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|</font></font></strong>
+                        <a href="" class="">登录</a>
+                        <strong>|</strong>
+                        <a href="" class="">注册</a>
+                        <strong>|</strong>
                     </span>
                     <span>
-                        <a href="" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中心会员</font></font></a>
-                        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font></strong>
-                        <a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">退出</font></font></a>
-                        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|</font></font></strong>
+                        <router-link to="/VIP">会员中心</router-link>
+                        <strong>|</strong>
+                        <a>退出</a>
+                        <strong>|</strong>
                     </span>
                     <a href="" class="">
-                        <i class="iconfont icon-cart"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">购物车（
-                         </font><span id="shoppingCartCount"><span><font style="vertical-align: inherit;">4</font></span></span><font style="vertical-align: inherit;">）</font></font><span id="shoppingCartCount">
-                            <span><font style="vertical-align: inherit;"></font></span>
-                        </span><font style="vertical-align: inherit;"></font></a>
+                        <i class="iconfont icon-cart"></i>购物车(
+                        <span id="shoppingCartCount">
+                            <span>4</span>
+                        </span>)</a>
                 </div>
             </div>
         </div>
+
 
         <!-- 2.0 导航条 -->
         <div class="head-nav">
@@ -38,33 +39,33 @@
                 <div id="menu2" class="nav-box menuhd">
                     <ul>
                         <li class="index">
-                            <a href="#" class="">
-                                <span class="out" style="top: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首页</font></font></span>
-                            </a>
+                            <router-link to="/index">
+                                <span class="out" style="top: 0px;">首页</span>
+                            </router-link>
                         </li>
                         <li class="news">
                             <a href="#" class="">
-                                <span class="out" style="top: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每日精选</font></font></span>
+                                <span class="out" style="top: 0px;">每日精选</span>
                             </a>
                         </li>
                         <li class="photo">
                             <a href="#" class="">
-                                <span class="out" style="top: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">秒杀专区</font></font></span>
+                                <span class="out" style="top: 0px;">秒杀专区</span>
                             </a>
                         </li>
                         <li class="video">
                             <a href="#" class="">
-                                <span class="out" style="top: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">黑马超市</font></font></span>
+                                <span class="out" style="top: 0px;">黑马超市</span>
                             </a>
                         </li>
                         <li class="down">
                             <a href="#" class="">
-                                <span class="out" style="top: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员权益</font></font></span>
+                                <span class="out" style="top: 0px;">会员权益</span>
                             </a>
                         </li>
                         <li class="goods">
                             <a href="" class="router-link-exact-active ">
-                                <span class="out" style="top: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">购物商城</font></font></span>
+                                <span class="out" style="top: 0px;">购物商城</span>
                             </a>
                         </li>
                     </ul>
@@ -80,6 +81,9 @@
             </div>
         </div>
     </div>
+    
+    <!-- 路由出口 -->
+    <router-view></router-view>
 
       <!-- 底部通栏 -->
       <div class="footer">
@@ -117,15 +121,10 @@
 </template>
 
 <script>
-
-
-
 export default {
-  name: 'app',
-
-}
+    
+};
 </script>
 
 <style>
-
 </style>
